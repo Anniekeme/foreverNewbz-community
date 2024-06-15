@@ -1,0 +1,797 @@
+/* Apply box-sizing to all elements and pseudo-elements */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* Reset margin for all elements */
+
+* {
+    margin: 0;
+}
+
+
+/* Set base font size */
+
+html {
+    font-size: 16px;
+}
+
+
+/* Global body styling */
+
+body {
+    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* Responsive images and svg */
+
+img,
+picture,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* Navbar styling */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* Logo styling */
+
+.logo img {
+    height: 40px;
+}
+
+
+/* Hamburger menu styling */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+/* Hamburger line styling */
+
+.hamburger-line {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+/* Navigation links styling */
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Individual nav link item */
+
+.nav-links li {
+    margin: 0;
+}
+
+
+/* Navigation link styling */
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+
+/* Navigation link hover effect */
+
+.nav-links a:hover {
+    color: #fbff00;
+}
+
+
+/* Hero section styling */
+
+.hero-section {
+    height: 100vh;
+    width: 100%;
+    background-image: url('img/which-development-job-is-right-for-you.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+/* Hero content positioning */
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: white;
+    text-align: left;
+}
+
+
+/* Hero section heading */
+
+.hero-content h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+
+/* Hero button styling */
+
+.hero-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+
+/* Hero button hover effect */
+
+.hero-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Custom class styling */
+
+.newbz {
+    color: rgb(245, 245, 4);
+}
+
+
+/* About section styling */
+
+.about-section {
+    height: 70vh;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+
+/* About section heading */
+
+.about-section h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+
+/* About content styling */
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+
+/* About text styling */
+
+.about-text {
+    max-width: 100%;
+    margin: 10px;
+    font-size: 1em;
+}
+
+
+/* About images styling */
+
+.about-images {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* Individual about image styling */
+
+.about-images img {
+    max-width: 309px;
+    margin-bottom: -40px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* Community section styling */
+
+.community-section {
+    padding: 50px;
+    background-color: #e0e0e09c;
+    text-align: center;
+    color: #fff;
+    height: 65vh;
+    background-image: url('img/aniekeme.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+/* Community section heading */
+
+.community-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 12px;
+}
+
+
+/* Community description styling */
+
+.community-description {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 1em;
+}
+
+
+/* Custom button styling */
+
+.custom-button {
+    margin: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* Custom button hover effect */
+
+.custom-button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+
+/* Benefits section styling */
+
+.benefits-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+
+/* Benefits section heading */
+
+.benefits-section h2 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+
+/* Benefits container styling */
+
+.benefits-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/* Individual benefit card styling */
+
+.benefit-card {
+    background-color: #3a0c7d7d;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1 1 calc(25% - 40px);
+    min-width: 200px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Benefit card hover effect */
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Benefit card image styling */
+
+.benefit-card img {
+    width: 252px;
+    height: 156px;
+    border-radius: 7%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+
+/* Benefit card heading */
+
+.benefit-card h3 {
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+
+/* Benefit card paragraph */
+
+.benefit-card p {
+    margin: 10px 0 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+
+/* Footer styling */
+
+footer {
+    background: #140B5C;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* Footer divider line */
+
+footer::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100px;
+    height: 1px;
+    width: 100%;
+    background: #AFAFB6;
+}
+
+
+/* Footer content styling */
+
+footer .content {
+    max-width: 1250px;
+    margin: auto;
+    padding: 30px 40px 40px 40px;
+}
+
+
+/* Top section of footer */
+
+footer .content .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+
+/* Logo details in footer */
+
+.content .top .logo-details {
+    color: #fff;
+    font-size: 30px;
+}
+
+
+/* Social media icons in footer */
+
+.content .top .media-icons {
+    display: flex;
+}
+
+
+/* Individual media icon styling */
+
+.content .top .media-icons a {
+    height: 40px;
+    width: 40px;
+    margin: 0 8px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+
+/* Specific media icon background colors */
+
+.top .media-icons a:nth-child(1) {
+    background: #4267B2;
+}
+
+.top .media-icons a:nth-child(2) {
+    background: #1DA1F2;
+}
+
+.top .media-icons a:nth-child(3) {
+    background: #E1306C;
+}
+
+.top .media-icons a:nth-child(4) {
+    background: #0077B5;
+}
+
+.top .media-icons a:nth-child(5) {
+    background: #FF0000;
+}
+
+
+/* Media icon hover effects */
+
+.top .media-icons a:hover {
+    color: inherit;
+    background: #fff;
+}
+
+
+/* Footer link boxes */
+
+footer .content .link-boxes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Individual link box */
+
+footer .content .link-boxes .box {
+    width: calc(100% / 5 - 10px);
+}
+
+
+/* Link box heading */
+
+.content .link-boxes .box .link_name {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+/* Link box heading underline */
+
+.link-boxes .box .link_name::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 35px;
+    background: #fff;
+}
+
+
+/* Footer link list */
+
+.content .link-boxes .box li {
+    margin: 6px 0;
+    list-style: none;
+}
+
+
+/* Footer link styling */
+
+.content .link-boxes .box li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: all 0.4s ease;
+}
+
+
+/* Footer link hover effect */
+
+.content .link-boxes .box li a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+
+/* Footer input box */
+
+.content .link-boxes .input-box {
+    margin-right: 55px;
+}
+
+
+/* Footer input styling */
+
+.link-boxes .input-box input {
+    height: 40px;
+    width: calc(100% + 55px);
+    outline: none;
+    border: 2px solid #AFAFB6;
+    background: #140B5C;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 5px;
+}
+
+
+/* Footer input placeholder styling */
+
+.link-boxes .input-box input::placeholder {
+    color: #AFAFB6;
+    font-size: 16px;
+}
+
+
+/* Footer button styling */
+
+.link-boxes .input-box input[type="button"] {
+    background: #fff;
+    color: #140B5C;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 4px 0;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+
+/* Footer button hover effect */
+
+.input-box input[type="button"]:hover {
+    opacity: 1;
+}
+
+
+/* Bottom details of footer */
+
+footer .bottom-details {
+    width: 100%;
+    background: #0F0844;
+}
+
+
+/* Bottom text in footer */
+
+footer .bottom-details .bottom_text {
+    max-width: 1250px;
+    margin: auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Bottom text styling */
+
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a {
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+
+/* Bottom text link hover effect */
+
+.bottom-details .bottom_text a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.bottom-details .bottom_text a {
+    margin-right: 10px;
+}
+
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        gap: 20px;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+    }
+}
+
+@media (min-width: 600px) {
+    .nav-links {
+        gap: 20px;
+    }
+    .nav-links a {
+        font-size: 16px;
+    }
+    .hero-content h1 {
+        font-size: 28px;
+    }
+    .hero-button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .about-section h2 {
+        font-size: 2.5em;
+    }
+    .about-content {
+        flex-direction: row;
+        text-align: left;
+    }
+    .about-text {
+        max-width: 600px;
+    }
+    .about-images img {
+        max-width: 390px;
+    }
+    .community-section h2 {
+        font-size: 2em;
+    }
+    .community-description {
+        font-size: 1.2em;
+    }
+    .benefits-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar {
+        padding: 20px 50px;
+    }
+    .hero-content {
+        left: 50px;
+    }
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    .hero-button {
+        font-size: 18px;
+    }
+    .about-section h2 {
+        font-size: 3em;
+    }
+    .community-section h2 {
+        font-size: 2.5em;
+    }
+    .community-description {
+        font-size: 1.5em;
+        max-width: 800px;
+    }
+    .benefits-container {
+        gap: 20px;
+    }
+    .benefit-card {
+        flex: 1 1 calc(25% - 40px);
+    }
+}
+
+@media (max-width: 900px) {
+    footer .content .link-boxes {
+        flex-wrap: wrap;
+    }
+    footer .content .link-boxes .input-box {
+        width: 40%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    footer {
+        position: relative;
+    }
+    .content .top .logo-details {
+        font-size: 26px;
+    }
+    .content .top .media-icons a {
+        height: 35px;
+        width: 35px;
+        font-size: 14px;
+        line-height: 35px;
+    }
+    footer .content .link-boxes .box {
+        width: calc(100% / 3 - 10px);
+    }
+    footer .content .link-boxes .input-box {
+        width: 60%;
+    }
+    .bottom-details .bottom_text span,
+    .bottom-details .bottom_text a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 520px) {
+    footer::before {
+        top: 145px;
+    }
+    footer .content .top {
+        flex-direction: column;
+    }
+    .content .top .media-icons {
+        margin-top: 16px;
+    }
+    footer .content .link-boxes .box {
+        width: calc(100% / 2 - 10px);
+    }
+    footer .content .link-boxes .input-box {
+        width: 100%;
+    }
+}
